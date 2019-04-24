@@ -38,7 +38,14 @@
 .navbar-inverse .navbar-nav > li > a {
     color: white;
     text-decoration-color: grey;
-    font-size: 20px;
+}
+.dropdown-menu {
+    padding: 0px;
+}
+.dropdown-menu > li > a {
+    padding: 20px;
+    color: white;
+    background-color: #2e7d32;
 }
 .navbar-inverse .navbar-nav > li > a:hover {
     background-color: #003300;
