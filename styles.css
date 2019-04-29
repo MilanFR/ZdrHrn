@@ -87,8 +87,30 @@
     bottom: 0px;
 }
 
+#row-about {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#well-about, .row .radno-vreme, #row-about img {
+    max-width: 800px;
+    margin: auto;
+    padding: 0;
+}
+
+#well-about h1 {
+    font-weight: bold;
+    padding: 20px;
+}
+.row .radno-vreme {
+    padding: 60px;    
+}
+.row .radno-vreme  img {
+    max-height: 150px;
+}
 .polje {
-    padding: 40px;
+    max-width: 1000px;
+    margin: auto;
 }
 .polje img {
     border-radius: 50%;
@@ -102,3 +124,6 @@
     color: white;
     text-align: center;
 }
+
+/* ====== Kontakt Page ====== */
+
