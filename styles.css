@@ -9,26 +9,29 @@
     padding: 0px;
 }
 
+.container-fluid {
+    margin: 10px;
+} 
 #logo {
-    width: 150px;
-    height: 120px;
+    width: 65px;
+    height: 60px;
     background-color: grey;
 }
-#menu {
-    text-align: center;
-    border: 1px solid red;
-}
-#menu li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px 5px;
 
+#menu-btn {
+    margin: 7px;
 }
+
 .navbar {
     margin: 0px;
+} 
+@media only screen and (max-width: 767px) {
+    #navbar-menu {
+        display: none
+    }
 }
 .navbar-inverse {
-    background-color: #2e7d32;
+    background-color: white;
     border: none;
     border-radius: 0px;
 
@@ -36,6 +39,8 @@
 .navbar-inverse .navbar-nav > li > a {
     color: white;
     text-decoration-color: grey;
+    background-color: #2e7d32;
+    
 }
 .navbar-inverse .navbar-nav > li > a:hover {
     background-color: #003300;
@@ -43,6 +48,9 @@
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
     color: #fff;
     
+}
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #2e7d32;
 }
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
     color: black;
@@ -61,8 +69,20 @@
 }
 
 @media only screen and (min-width: 768px) {
+    #menu-btn {
+        display: none;
+    }
+    
+    .container-fluid {
+        margin: 20px;
+    } 
     .navbar-nav > li > a {
-        padding: 22px;
+        padding: 10px 10px;
+        border-radius: 5px;
+    }
+    .navbar-nav > li  {
+        margin: 10px 0;
+        margin-right: 20px;
     }
     .carousel-caption {
         padding-left: 100px;
