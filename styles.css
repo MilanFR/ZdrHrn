@@ -18,7 +18,7 @@
     background-color: grey;
 }
 
-#menu-btn {
+#menu-btn, #menu-btn2 {
     margin: 7px;
 }
 
@@ -28,6 +28,11 @@
 @media only screen and (max-width: 767px) {
     #navbar-menu {
         display: none
+    }
+    #sandwich-menu > button {
+        display: block; 
+        width: 100%;
+        padding: 15px 25px;
     }
 }
 .navbar-inverse {
@@ -49,12 +54,10 @@
     color: #fff;
     
 }
-.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+.navbar-inverse .navbar-nav > li > a:focus {
     background-color: #2e7d32;
 }
-.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: black;
-}
+
 .dropdown-menu {
     padding: 0px;
 }
