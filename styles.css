@@ -108,6 +108,7 @@
     background-image: linear-gradient(to right, transparent, rgba(0,0,0,0.7), transparent); 
     padding-bottom: 60px;
     bottom: 0px;
+    font-size: x-large; 
 }
 
 #row-about {
@@ -115,18 +116,33 @@
     padding-top: 30px;
 }
 
-#well-about, .row .radno-vreme, #row-about img {
-    max-width: 800px;
+#well-about, .row .radno-vreme {
+    max-width: 1000px;
     margin: auto;
     padding: 0;
 }
 
-#well-about h1 {
+#row-about > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+#well-about h2 {
     font-weight: bold;
     padding: 20px;
+    color: black;
+}
+#well-about p {
+    font-size: 16px;
+}
+#well-about p:nth-child(2) {
+    margin-bottom: 40px;
 }
 .row .radno-vreme {
     padding: 60px;    
+}
+.row .radno-vreme h4 {
+    font-weight: bold;
 }
 .row .radno-vreme  img {
     max-height: 150px;
